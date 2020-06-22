@@ -4,25 +4,50 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:layout_margin="12dp">
 
 
-        <LinearLayout
+    <TextView
+        android:id="@+id/textView_hobarb_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll_main"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:fontFamily="@font/david_libre_medium"
+        android:gravity="center"
+        android:text="Developed with ❤ by Hobarb"
+        android:textSize="12sp" />
+
+    <LinearLayout
+        android:id="@+id/ll_main"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
 
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/supremeqrsc" />
 
             <Button
                 android:id="@+id/buttonScan"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_centerInParent="true"
                 android:text="SCAN" />
 
+            <Button
+                android:id="@+id/button_history_main"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="History" />
 
-        </LinearLayout>
+
+    </LinearLayout>
 
 
 
